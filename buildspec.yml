@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - npm install -g npm@latest # npm 업데이트
+  build:
+    commands:
+      - npm install # 앱의 종속성 설치
+      - npm run build # React 앱 빌드
+artifacts:
+  files:
+    - '**/*' # 빌드된 파일 및 디렉터리 포함 (모든 것)
+  base-directory: build

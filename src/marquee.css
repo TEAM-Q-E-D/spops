@@ -1,0 +1,27 @@
+/* src/marquee.css */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    /* 초기 위치를 왼쪽 끝으로 변경 */
+    /* transform: translateX(-100%); */
+    font-weight: bold; /* 볼드체로 설정 */
+  }
+  
+  @keyframes marquee {
+    0% {
+      /* 최종 위치를 오른쪽 끝으로 변경 */
+      transform: translateX(100%);
+    }
+    100% {
+      /* 초기 위치를 왼쪽 끝으로 변경 */
+      transform: translateX(-100%);
+    }
+  }
+  
