@@ -33,7 +33,7 @@ const EditPlayerModal = ({
               type="text"
               value={editedPlayerName}
               onChange={(e) => setEditedPlayerName(e.target.value)}
-              color="white"
+              color="black"
             />
           </FormControl>
         </ModalBody>
