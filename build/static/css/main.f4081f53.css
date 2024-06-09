@@ -1,0 +1,2 @@
+.marquee{overflow:hidden;position:relative;white-space:nowrap;width:100%}.marquee-text{animation:marquee 10s linear infinite;display:inline-block;font-weight:700}@keyframes marquee{0%{transform:translateX(100%)}to{transform:translateX(-100%)}}
+/*# sourceMappingURL=main.f4081f53.css.map*/

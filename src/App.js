@@ -74,7 +74,7 @@ function App() {
         })
         .catch(error => {
           if (error.response && error.response.status === 404) {
-            setAlertMessage("유저 페이지에서 먼저 유저 등록을 진행해주세요.");
+            setAlertMessage("선수 등록 페이지에서 먼저 등록을 진행해주세요.");
             setNewPlayer("");
           }
           console.error(error);
@@ -163,7 +163,7 @@ function App() {
         .then(response => console.log(response))
         .catch(error => {
           if (error.response && error.response.status === 404) {
-            setAlertMessage("유저 페이지에서 먼저 유저 등록을 진행해주세요.");
+            setAlertMessage("선수 등록 페이지에서 먼저 등록을 진행해주세요.");
             setNewPlayer("");
           } else {
             console.error(error);
@@ -249,7 +249,7 @@ function App() {
 
         <Box mt={2} p={2} w="100%" maxW="500px" borderRadius="lg" bg="gray.100" borderWidth="2px" borderColor="gray.300">
           <Button fontWeight="bold" textColor="white" bg="blue.400" onClick={openStreamlit} width="100%">
-            유저 생성 및 기록 확인 페이지
+            선수 등록 및 기록 확인 페이지
           </Button>
         </Box>
       </Box>
